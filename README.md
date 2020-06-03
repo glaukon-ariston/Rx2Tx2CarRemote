@@ -5,12 +5,12 @@ Based on the Silan Semiconductors TX-2B/RX-2B datasheet. Open up your remote car
 
 From the datasheet:
 
-** REMOTE CONTROLLER WITH FIVE FUNCTIONS 
+## REMOTE CONTROLLER WITH FIVE FUNCTIONS 
 
-** DESCRIPTION
+### DESCRIPTION
 The TX-2B/RX-2B is a pair of CMOS LSIs designed for remote controlled car applications. The TX-2B/RX-2B has five control keys for controlling the motions (i.e. forward, backward, rightward, leftward and the turbo function) of the remote controlled car.
 
-** FEATURES
+### FEATURES
 - Wide operating voltage range (VCC=1.5~5.0V)
 - Low stand-by current
 - Auto-power-off function for TX-2B
