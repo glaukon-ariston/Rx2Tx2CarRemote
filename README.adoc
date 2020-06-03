@@ -1,4 +1,5 @@
-# Rx2Tx2CarRemote
+= Cheap Toy Car Remote Control using Arduino =
+
 Control cheap toy remote cars by hijacking the car's transmitter and sending control codes to the car's receiver using Arduino.
 
 Based on the Silan Semiconductors TX-2B/RX-2B datasheet. Open up your remote car's transmitter to see what chip is being used.
@@ -20,4 +21,3 @@ FEATURES
 * Few external components are needed
 
 There is a similar project at https://github.com/dimircea/RX2-TX2-RC
-
