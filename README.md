@@ -1,6 +1,7 @@
 # Rx2Tx2CarRemote
 Control cheap toy remote cars by hijacking the car's remote control and sending control codes to the car's receiver using Arduino.
 
+<img src="images/IMG_20200605_112643.jpg" width="300px" hspace="1em" />
 
 ## Installation
 
