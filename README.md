@@ -1,6 +1,7 @@
 # Rx2Tx2CarRemote
 Control cheap toy remote cars by hijacking the car's remote control and sending control codes to the car's receiver using Arduino.
 
+
 ## Installation
 
 This is an Arduino library. Copy it to your Arduino's libraries folder (mine is at `C:\app\electro\Arduino\libraries`). Also you will need to change the `platform.txt` file (mine is located at `C:\app\electro\Arduino\hardware\arduino\avr\platform.txt`) in order to force Arduino IDE to use `c++17` standard by modifying the line where `compiler.cpp.flags` are defined. Change `-std=gnu++11` to `-std=gnu++17`. The line in my `platform.txt` now reads
@@ -8,6 +9,7 @@ This is an Arduino library. Copy it to your Arduino's libraries folder (mine is 
 ```
 compiler.cpp.flags=-c -g -Os {compiler.warning_flags} -std=gnu++17 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto
 ```
+
 
 ## Hardware Modification
 
@@ -40,5 +42,29 @@ The TX-2B/RX-2B is a pair of CMOS LSIs designed for remote controlled car applic
 - Auto-power-off function for TX-2B
 - Few external components are needed
 
-There is a similar project at https://github.com/dimircea/RX2-TX2-RC
+
+## Captured Traces
+
+Forward
+<img src="images/Saleae_Forward_40_4xWord+16xENDCODE.PNG" width="300px" hspace="1em" />
+
+Forward (signal timing)
+<img src="images/Saleae_Forward_40_4xWord+16xENDCODE_timing.PNG" width="300px" hspace="1em" />
+
+Forward (ENDCODE timing)
+<img src="images/Saleae_Forward_40_4xWord+16xENDCODE_endcode_timing.PNG" width="300px" hspace="1em" />
+
+Backward
+<img src="images/Saleae_Backward_10_6xWord+16xENDCODE.PNG" width="300px" hspace="1em" />
+
+Left
+<img src="images/Saleae_Left_58_2xWord+15xENDCODE.PNG" width="300px" hspace="1em" />
+
+Right
+<img src="images/Saleae_Right_64_3xWord+15xENDCODE.PNG" width="300px" hspace="1em" />
+
+
+
+## Resources
+- There is a similar project at https://github.com/dimircea/RX2-TX2-RC
 
