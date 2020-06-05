@@ -14,19 +14,18 @@ compiler.cpp.flags=-c -g -Os {compiler.warning_flags} -std=gnu++17 -fpermissive 
 Open up your car's remote control to see what chip is being used. Mine reads TXM RX-2B YZX13E8 for the reciever (inside the car) and TXM TX-2B YZX13MB for the transmitter (inside the remote control).
 
 ## Transmitter
-<img src="images/IMG_20200530_234932.jpg" width="300px" hspace="1em" />
-<img src="images/IMG_20200530_235306.jpg" width="300px" hspace="1em" />
+<img src="images/IMG_20200530_234932.jpg" width="300px" hspace="1em" /> <img src="images/IMG_20200530_235306.jpg" width="300px" hspace="1em" />
 
 You will need to bring out three signals: GND, SO (Signal Out - PIN 8) and PC (Power Control - PIN 10). You can also bring out the Vdd so you can power the remote control from Arduino, but then you have to be careful not to leave batteries in the remote. I used a shielded cable to prevent electromagnetic interference (connect the shielding to GND).
 
 <img src="images/IMG_20200602_103417.jpg" width="300px" hspace="1em" />
 
-Two digital pins are used for sending codes. Set PC (Power Control - PIN 10) high and then pulse SO (Signal Out - PIN 8) with encoded 1kHz signal as per the datasheet. 
+Two digital pins are used for sending codes. Set PC (Power Control - PIN 10) high and then pulse SO (Signal Out - PIN 8) with encoded 1kHz signal to send a command to the receiver. Possible commands are: `FORWARD, FORWARD_TURBO, TURBO, FORWARD_LEFT, FORWARD_RIGHT, BACKWARD, BACKWARD_RIGHT, BACKWARD_LEFT` and `LEFT`. It is unfortunate that the commands are binary -- they are either on or off, there is no way to throttle. 
+
 <img src="images/IMG_20200605_075026.jpg" width="300px" hspace="1em" />
 
 ## Receiver
-<img src="images/IMG_20200531_001246.jpg" width="300px" hspace="1em" />
-<img src="images/IMG_20200531_001326.jpg" width="300px" hspace="1em" />
+<img src="images/IMG_20200531_001246.jpg" width="300px" hspace="1em" /> <img src="images/IMG_20200531_001326.jpg" width="300px" hspace="1em" />
 
 From the Silan Semiconductors TX-2B/RX-2B [datasheet](datasheet/TX-2B.pdf):
 
