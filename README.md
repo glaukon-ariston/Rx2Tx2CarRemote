@@ -20,6 +20,8 @@ Open up your car's remote control to see what chip is being used. Mine reads TXM
 You will need to bring out three signals: GND, SO (Signal Out - PIN 8) and PC (Power Control - PIN 10). You can also bring out the Vdd so you can power the remote control from Arduino, but then you have to be careful not to leave batteries in the remote. I used a shielded cable to prevent electromagnetic interference (connect the shielding to GND).
 
 <img src="images/IMG_20200602_103417.jpg" width="300px" hspace="1em" />
+
+Two digital pins are used for sending codes. Set PC (Power Control - PIN 10) high and then pulse SO (Signal Out - PIN 8) with encoded 1kHz signal as per the datasheet. 
 <img src="images/IMG_20200605_075026.jpg" width="300px" hspace="1em" />
 
 ## Receiver
