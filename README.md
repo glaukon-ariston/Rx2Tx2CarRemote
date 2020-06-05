@@ -6,7 +6,7 @@ Control cheap toy remote cars by hijacking the car's remote control and sending 
 This is an Arduino library. Copy it to your Arduino's libraries folder (mine is at `C:\app\electro\Arduino\libraries`). Also you will need to change the `platform.txt` file (mine is located at `C:\app\electro\Arduino\hardware\arduino\avr\platform.txt`) in order to force Arduino IDE to use `c++17` standard by modifying the line where `compiler.cpp.flags` are defined. Change `-std=gnu++11` to `-std=gnu++17`. The line in my `platform.txt` now reads
 
 ```
-compiler.cpp.flags=-c -g -Os {compiler.warning_flags} -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto
+compiler.cpp.flags=-c -g -Os {compiler.warning_flags} -std=gnu++17 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto
 ```
 
 ## Hardware Modification
