@@ -1,7 +1,17 @@
 # Rx2Tx2CarRemote
-Control cheap toy remote cars by hijacking the car's transmitter and sending control codes to the car's receiver using Arduino.
+Control cheap toy remote cars by hijacking the car's remote control and sending control codes to the car's receiver using Arduino.
 
-Based on the Silan Semiconductors TX-2B/RX-2B datasheet. Open up your remote car's transmitter to see what chip is being used. Mine reads TXM RX-2B YZX13E8 for the reciever (inside the car) and TXM TX-2B YZX13MB for the transmitter (inside the remote control).
+## Installation
+
+This is an Arduino library. Copy it to your Arduino's libraries folder (mine is at `C:\app\electro\Arduino\libraries`). Also you will need to change the `platform.txt` file (mine is located at `C:\app\electro\Arduino\hardware\arduino\avr\platform.txt`) in order to force Arduino IDE to use `c++17` standard by modifying the line where `compiler.cpp.flags` are defined. Change `-std=gnu++11` to `-std=gnu++17`. The line in my `platform.txt` now reads
+
+```
+compiler.cpp.flags=-c -g -Os {compiler.warning_flags} -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto
+```
+
+## Hardware Modification
+
+Open up your car's remote control to see what chip is being used. Mine reads TXM RX-2B YZX13E8 for the reciever (inside the car) and TXM TX-2B YZX13MB for the transmitter (inside the remote control).
 
 ## Transmitter
 <img src="images/IMG_20200530_234932.jpg" width="300px" hspace="1em" />
@@ -11,7 +21,7 @@ Based on the Silan Semiconductors TX-2B/RX-2B datasheet. Open up your remote car
 <img src="images/IMG_20200531_001246.jpg" width="300px" hspace="1em" />
 <img src="images/IMG_20200531_001326.jpg" width="300px" hspace="1em" />
 
-From the [datasheet](datasheet/TX-2B.pdf):
+From the Silan Semiconductors TX-2B/RX-2B [datasheet](datasheet/TX-2B.pdf):
 
 ### REMOTE CONTROLLER WITH FIVE FUNCTIONS 
 
