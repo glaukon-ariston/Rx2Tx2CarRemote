@@ -46,22 +46,22 @@ The TX-2B/RX-2B is a pair of CMOS LSIs designed for remote controlled car applic
 ## Captured Traces
 
 Forward
-<img src="images/Saleae_Forward_40_4xWord+16xENDCODE.PNG" width="300px" hspace="1em" />
+<img src="images/LATrace/Saleae_Forward_40_4xWord+16xENDCODE.PNG" width="300px" hspace="1em" />
 
 Forward (signal timing)
-<img src="images/Saleae_Forward_40_4xWord+16xENDCODE_timing.PNG" width="300px" hspace="1em" />
+<img src="images/LATrace/Saleae_Forward_40_4xWord+16xENDCODE_timing.PNG" width="300px" hspace="1em" />
 
 Forward (ENDCODE timing)
-<img src="images/Saleae_Forward_40_4xWord+16xENDCODE_endcode_timing.PNG" width="300px" hspace="1em" />
+<img src="images/LATrace/Saleae_Forward_40_4xWord+16xENDCODE_endcode_timing.PNG" width="300px" hspace="1em" />
 
 Backward
-<img src="images/Saleae_Backward_10_6xWord+16xENDCODE.PNG" width="300px" hspace="1em" />
+<img src="images/LATrace/Saleae_Backward_10_6xWord+16xENDCODE.PNG" width="300px" hspace="1em" />
 
 Left
-<img src="images/Saleae_Left_58_2xWord+15xENDCODE.PNG" width="300px" hspace="1em" />
+<img src="images/LATrace/Saleae_Left_58_2xWord+15xENDCODE.PNG" width="300px" hspace="1em" />
 
 Right
-<img src="images/Saleae_Right_64_3xWord+15xENDCODE.PNG" width="300px" hspace="1em" />
+<img src="images/LATrace/Saleae_Right_64_3xWord+15xENDCODE.PNG" width="300px" hspace="1em" />
 
 
 
